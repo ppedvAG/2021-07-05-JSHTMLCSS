@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        p {
+            font-style:italic;
+        }
+        table {
+            /*border: thin solid;*/
+            /* Beachte: Caption steht außerhalb vom Rahmen, obwohl caption drinne von table ist. */
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: thin solid;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div - Division. Zum Gruppieren von weiteren Inhalten / Elementen. -->
+    <div>
+        <img src="https://via.placeholder.com/200/541325" alt="" />
+        <h4>Beschreibung 1</h4>
+        <hr />
+        <p>kursiv text</p>
+    </div>
+    <div>
+        <img src="https://via.placeholder.com/200/541525" alt="" />
+        <h4>Beschreibung 1</h4>
+        <hr />
+        <p>kursiv text</p>
+    </div>
+    <div>
+        <img src="https://via.placeholder.com/200/591325" alt="" />
+        <h4>Beschreibung 1</h4>
+        <hr />
+        <p>kursiv text</p>
+    </div>
+
+    <!-- Funktioniert, ist aber nicht so gedacht: -->
+    <div>text in div</div>
+    text in body
+
+    <!-- Falsche Verschachtelung:
+        Listen in Paragraphen
+        Paragraphen in Überschriften
+        Division in Paragraphen
+        -->
+    <!-- Old School Sectioning: mit Tabellen -->
+    <!-- im moment nur in HTML-Emails -->
+    <!-- nicht zum Sectioning, sondern zur tabelarischen Darstellung von Daten: -->
+    <table>
+        <caption>Beschreibung der Tabelle</caption>
+        <thead><tr><th>th</th><th>th</th></tr></thead>
+        <tbody>
+            <tr><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td></tr>
+        </tbody>
+        <tfoot><tr><th>th</th><th>th</th></tr></tfoot>
+    </table>
+
+    table>caption{Beschreibung}+(thead>tr>th{th}*2)+(tbody>(tr>td{td}*2)*3)+(tfoot>tr>th{th}*2)
+
+    <!-- Sectioning, aktuell: -->
+    <header></header>
+    <section></section>
+    <article></article>
+    <nav></nav>
+    <aside></aside>
+    <footer></footer>
+
+</body>
+</html>
