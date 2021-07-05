@@ -58,3 +58,9 @@ console.log(var1); // 7
 
 
 document.getElementById('p_id').innerHTML = 'Inhalt f&uuml;r p_id-Paragraph';
+
+// AUFRUF VON FUNKTIONEN GLEICH NACH DER DEFINITION
+// solche Ausdrücke am besten mit Semikolons abschließen
+(function doSomething() {
+    console.log('something');
+})();

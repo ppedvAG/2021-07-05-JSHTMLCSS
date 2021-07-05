@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Übung Zoom</title>
+</head>
+<body>
+    <h1>Übung Zoom</h1>
+    <img src="https://picsum.photos/200" alt="ein Zufallsbild" />
+    <img src="https://picsum.photos/200" alt="ein Zufallsbild" />
+    <img src="https://picsum.photos/200" alt="ein Zufallsbild" />
+    <img src="https://picsum.photos/200" alt="ein Zufallsbild" />
+    <button onclick="zoom()">ZOOM</button>
+    <script>
+        let myImages = document.images;
+        console.log("myImages: ", myImages);
+        function zoom() {
+            for (const i of myImages) {
+                i.style.zoom = 2
+            }
+        }
+
+        // myImages[0].style.zoom = 2;
+    </script>
+</body>
+</html>

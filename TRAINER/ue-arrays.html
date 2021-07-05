@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Übung Arrays</title>
+</head>
+<body>
+    <h1>Übung Arrays</h1>
+
+    <pre>
+Zeigen Sie bitte 'title' vom ersten todo in einem li-Elemen an.
+</pre>
+    <!-- unordered list / unsortierte liste -->
+    <ul>
+        <li id="myLI"></li>
+    </ul>
+
+    <pre>
+Zeigen Sie titles von allen Todos an.
+</pre>
+    <!-- ordered list / sortierte liste -->
+    <ol id="myOL">
+
+    </ol>
+
+    <script>
+
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            // .then(json => console.log(json)) // über Objekt console greift auf die Browser-Konsole (Dev Tools) zu
+            // .then(json => renderTodo(json))
+            .then(json => renderTodos(json))
+
+        let liElement = document.getElementById('myLI');
+
+        function renderTodo(einArray) {
+            // Schritt 1: li ansprechen
+            // Schritt 2: die gewünschten Inhalte durch dieses LI darstellen
+            // if (Array.isArray(einArray))
+            liElement.innerText = einArray[0].title;
+        }
+        function renderTodos(todos) {
+            let olElement = document.getElementById('myOL');
+            for (const todo of todos) {
+                let newLI = document.createElement('li');
+                newLI.innerHTML = todo.title;
+                olElement.appendChild(newLI);
+            }
+        }
+
+    </script>
+</body>
+
+
+
+</html>
