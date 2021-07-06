@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Übung Objekte</title>
+</head>
+<body>
+    <h1>Übung Objekte</h1>
+
+
+    <pre>
+Aufgabenstellung
+Programmieren Sie ein Objekttyp Transportmittel mit folgenden Eigenschaften (Properties):
+-	Modell
+-	Maximal-Geschwindigkeit
+-	Preis
+-	Aktuelle Geschwindigkeit
+-	IstAn (true/false)
+
+und folgenden Methoden:
+-	Beschleunige: Erhöht die Geschwindigkeit, darf aber Maximal-Geschwindigkeit nicht überschreiten
+-	Bremse: Setzt die Geschwindigkeit runter, darf aber in den Minus-Bereich nicht reingehen
+-	StarteMotor: Wechselt von Zustand aus zu an
+-	StoppeMotor: Wechselt von Zustand an zu aus
+-	BeschreibeMich: Gibt Informationen über das Transportmittel als String zurück
+
+Legen Sie eine Instanz vom Objekttyp Transportmittel an. Rufen Sie die Methode ‚BeschreibeMich‘ auf.
+</pre>
+
+    <h2>Ausgabe</h2>
+    <h3>BeschreibeDich</h3>
+    <p id="output1"></p>
+    <h3>Beschleunige</h3>
+    <p id="output2"></p>
+    <h3>Bremse</h3>
+    <p id="output3"></p>
+
+    <script>
+        // Wenn man diese Schreibweise mit den modernen OOP-Sprachen vergleicht,
+        // dann ist es gleichzeitig eine Klasse und ein Konstruktor der Klasse
+        function Transportmittel(modell, maxGeschw, preis) {
+            this.Modell = modell
+            this.MaxGeschw = maxGeschw
+            this.Preis = preis
+            this.AktGeschw = 0
+            this.IstAn = false
+            this.Beschleunige = (km) => {
+                let neueGeschw = this.AktGeschw + km
+                if (neueGeschw <= this.MaxGeschw) {
+                    this.AktGeschw = neueGeschw
+                    return `erfolgreich beschleunigt auf Geschwindigkeit: ${this.AktGeschw}`
+                }
+                else {
+                    this.AktGeschw = this.MaxGeschw
+                    return `sie möchten zu schnell fahren, aktGesch gesetzt auf Maximum: ${this.AktGeschw}`
+                }
+            }
+            this.Bremse = (km) => {
+                let neueGeschw = this.AktGeschw - km
+                if (neueGeschw > 0) {
+                    this.AktGeschw = neueGeschw
+                    return `erfolgreich gebremst auf Geschwindigkeit: ${this.AktGeschw}`
+                }
+                else {
+                    this.AktGeschw = 0
+                    return `aktGesch gesetzt auf null: ${this.AktGeschw}`
+                }
+            }
+            this.StarteMotor = () => {
+                this.IstAn = true
+            }
+            this.StoppeMotor = () => {
+                this.IstAn = false
+            }
+            this.BeschreibeDich = () => {
+                return `Modell: ${this.Modell}
+                    MaxGeschw: ${this.MaxGeschw}
+                    Preis: ${this.Preis}
+                    AktGeschw: ${this.AktGeschw}
+                    IstAn: ${this.IstAn}`
+            }
+        }
+        let transportmittel = new Transportmittel('BMW', 250, 100000, 0, false)
+        output1.innerText = transportmittel.BeschreibeDich();
+        output2.innerText = transportmittel.Beschleunige(330);
+        output3.innerText = transportmittel.Bremse(50);
+
+
+        // Das Gleiche in der neuen Syntax
+        class TransportmittelKlasse {
+            constructor(Modell) {
+                this.Modell = Modell
+            }
+            BeschreibeMich = () => {
+                console.log(this);
+            }
+        }
+        let myTM = new TransportmittelKlasse('VW Polo');
+        myTM.BeschreibeMich();
+    </script>
+</body>
+</html>
