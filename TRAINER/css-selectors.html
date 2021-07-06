@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Selektoren</title>
+    <style>
+        /* Setzen Sie bei allen Element die Eigenschaft border auf 'thin solid' */
+        /* alle Elemente inklusive body und html werden damit selektiert */
+        * {
+            border: thin solid;
+            /* ausführlich: */
+            border-width: thin;
+            border-style: solid;
+        }
+        /* Setzen Sie bei allen Divisions die Eigenschaft text-decoration auf underline */
+        div {
+            text-decoration: underline;
+        }
+        /* Setzen Sie bei dem Element mit ID myH3 die Schrift auf kursiv */
+        #myH3 {
+            font-style: italic;
+        }
+        /* Setzen Sie bei allen Elementen mit der Klasse 'borderClass' die Rahmenfarbe auf coral */
+        .borderClass {
+            border-color: coral;
+            /* oder: */
+            /*border: coral;*/
+        }
+        /* Setzen Sie die Schriftfarbe bei den Divisions, die unmittelbare Kinder von Divisions sind, auf green */
+        div > div {
+            color: green;
+            /* setzt schriftfarbe und rahmen auf grün, deswegen: */
+            border-color: black;
+        }
+        /* Setzen Sie den Rahmenstil bei Divisions - unmittelbaren Kindern der Elemente mit der Klasse 'borderClass' auf dashed */
+        .borderClass > div {
+            border-style: dashed;
+        }
+
+        /* Werden die Stile von den Elternelementen vererbt? jein
+    nur von denen, deren Schriftgrößer ist gleich der Schriftgröße vom Elternelement
+*/
+        body {
+            font-size: 30px;
+        }
+
+        /* je allgemeiner ein Selektor ist, desto schwächer sind dessen Stile */
+        div {
+            color: brown;
+        }
+        /* id ist stärker als typselektor und klassenselektor und dessen kombinationen */
+        #middleDiv {
+            color: darkblue;
+        }
+
+        .borderClass {
+            color: chartreuse;
+            /* color: chartreuse !important;*/
+            /* mit Important setze ich die Spezifität von dem Selektor auf die höchste Priorität */
+        }
+        /* das wird nicht angewendet, weil so eine Kombination von Elementen nicht anwesend sind */
+        div > #middleDiv {
+            color: darkblue;
+        }
+        /* verneinung verstärkt die Spezifität von dem nicht verneinten Selektor, in diesem Fall: div.borderClass */
+        div:not(.borderClass) {
+            color: blueviolet;
+        }
+        /* Element nach einem anderen Element */
+        h1::after {
+            background-color: aquamarine;
+            height: 5px;
+            display: block;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selektoren</h1>
+    <h2>heading 2</h2>
+    <h2>heading 2</h2>
+
+    <h3>heading 3</h3>
+    <h3 id="myH3">heading 3</h3>
+
+    <p>paragraph</p>
+
+    <!--(div.borderClass{div ebene 1}>div{div ebene 2}>div{div ebene 3})*3-->
+    <div class="borderClass">
+        div ebene 1
+        <div>
+            div ebene 2
+            <div>div ebene 3</div>
+        </div>
+    </div>
+    <div id="middleDiv" class="borderClass" style="color: chocolate">
+        div ebene 1
+        <div>
+            div ebene 2
+            <div>div ebene 3</div>
+        </div>
+    </div>
+    <div class="borderClass">
+        div ebene 1
+        <div>
+            div ebene 2
+            <div>div ebene 3</div>
+        </div>
+    </div>
+</body>
+</html>
