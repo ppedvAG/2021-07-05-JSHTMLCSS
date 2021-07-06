@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Übung Forms</title>
+</head>
+<body>
+    <h1>Übung Forms</h1>
+    <pre>Fragen Sie das Alter vom Benutzer ab. Wenn der Benutzer nicht volljährig ist, wird ihm eine Warnung gezeigt.
+Wäre z.B. bei einem OnlineShop für Spiritousen notwendig.
+Setzen Sie dafür die Events 'input' oder 'change' von einem HTMLInputElement ein.</pre>
+    <hr />
+    
+    <input type="number" value="3" required/>
+    <script>
+        document.getElementsByTagName('input')[0].addEventListener('input', handleInput);
+        function handleInput(ev) {
+            // Zugriff auf Value vom Input, variante 1
+            // console.log(document.getElementsByTagName('input')[0].value)
+            // Variante 2
+            console.log(ev.target.value);
+            console.log(ev.target.validity.valid);
+            if (ev.target.validity.valid)
+                console.log('alles ok, digga');            
+        }
+        // Die Lösung ist nicht komplett!!!
+
+    </script>
+
+</body>
+</html>

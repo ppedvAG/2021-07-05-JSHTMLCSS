@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JS Typumwandlung</title>
+</head>
+<body>
+    <h1>JS Typumwandlung</h1>
+    <input type="number" value="" />
+    <output id="outp"></output>
+    <script>
+        document.getElementsByTagName('input')[0].addEventListener('change', handleChange)
+        function handleChange(ev) {
+            outp.value = typeof ev.target.value;
+            outp.value = ev.target.value <= 18; // funktioniert, weil nur die Werte wurden verglichen
+            outp.value = ev.target.value < 18; // auch nur die Werte, nicht die Typen
+            // outp.value = ev.target.value === 18; // false, weil in diesem Fall auch die Typen verglichen wurden
+           // outp.value = ev.target.value === '18'; // true,...
+
+
+        }
+
+        // Varianten von Typumwandlungen:
+        // String zu Number
+        console.log("typeof Number.parseInt('16'): ", typeof Number.parseInt('16')); // number
+        console.log("typeof Number('16'): ", typeof Number('16')); // number
+        console.log("typeof +'16': ", typeof +'16'); // number - mit jedem arithmetischen Operator kann man aus einem String eine Zahl erzeugen
+        console.log("typeof -'16': ", typeof -'16'); // number
+
+        // Number zu String
+        console.log("typeof String(16): ", typeof String(16)); // string
+        console.log("typeof String(): ", typeof String()); // string
+        console.log("typeof new String(): ", typeof new String()); // object
+        console.log("typeof new String(16): ", typeof new String(16)); // object
+        console.log("new String(16): ", new String(16)); // 
+        console.log("(new String(16)).valueOf(): ", (new String(16)).valueOf()); //
+        console.log("typeof (new String(16)).valueOf(): ", typeof (new String(16)).valueOf()); //string
+        console.log("new String('16'): ", new String('16')); // String {"16"}
+
+        // Boolean zu Number
+        console.log("typeof Number(true): ", typeof Number(true)); // number
+        console.log("Number(true): ",  Number(true)); // 1
+
+        // Number zu Boolean
+        console.log("typeof Boolean(1): ", typeof Boolean(1)); // boolean
+        console.log("Boolean(1): ", Boolean(1)); // true
+        console.log("Boolean(2): ", Boolean(2)); // true
+        console.log("Boolean(-1): ", Boolean(-1)); // true
+    </script>
+</body>
+</html>

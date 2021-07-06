@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML FÜR FORMULARE</title>
+</head>
+<body>
+    <h1>HTML FÜR FORMULARE</h1>
+    <form onsubmit="console.log('submit event triggered')">
+        <input required />
+        <!--kein textContent, innerHTML, innerText, sondern VALUE-->
+        <input type="text" value="text" />
+        <input type="number" value="4"  />
+        <input type="date" value=""  />
+        <input type="color" value=""  />
+
+
+
+        <!--button innerhalb von einem Formular ruft submit event auf ohne dass sein Type auf 'Submit'-->
+        <!-- weil alle buttons per default type submit haben -->
+        <button>OK</button>
+    </form>
+    <button>BTN außerhalb von Form</button>
+    <button>BTN außerhalb von Form</button>
+    <script>
+        let buttons = document.getElementsByTagName('button')
+        for (const button of buttons) {
+            console.log(button.type) // submit * 3
+        }
+
+        // PREVENT DEFAULT
+        // Ziel: Eingaben bei Formularen stehen lassen
+        console.log(document.forms[0])
+        document.forms[0].addEventListener('submit', handleSubmit)
+        function handleSubmit(ev) {
+            ev.preventDefault();
+        }
+
+    </script>
+
+</body>
+</html>
