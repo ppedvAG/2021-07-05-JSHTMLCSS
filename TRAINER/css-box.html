@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Box</title>
+    <style>
+        body {
+            border: thin solid;
+        }
+/* zum Veranschaulichen von Unterschieden zwischen block, inline, inline-block*/
+        p, span {
+            /* display-Eigenschaft bei paragraphen ist gesetzt auf 'block'*/
+            /* display-Eigenschaft bei spans ist gesetzt auf 'inline'*/
+/*            border: 50px groove grey;
+            padding: 10px;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            display: block;
+            display: inline;
+            display: inline-block;*/
+        }
+
+/* richtige, semantisch-logische Anwendung von block, inline, inline-block */
+        div {
+            border: 50px groove grey;            
+            margin: 10px;
+            height: auto; /* damit die Inhalte von div reinpassen*/
+            width: 100px;
+            display: inline-block;
+        }
+        span {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Box & inline/block/inline-block</h1>
+    <pre>
+Block Elemente sind 100% breit, wenn keine Breite angegeben wird.
+Breite- und Höhe-Angaben werden am Inhalt angewendet. Dann kommt noch der Rahmen dazu.
+
+Inline Elemente ignorieren Breite und Höhe. Sie sind so breit, wie deren Inhalt plus padding.
+Inline Elemente ignorieren margin-top und margin-bottom.
+
+Inline-Block Elemente akzeptieren Breite und Höhe sowie stehen nebeneinander, wenn es dort Platz gibt.
+</pre>
+    <p>paragraph</p>
+    <p>paragraph</p>
+
+    <!-- stehen die Elemente nebeneinander in der HTML-Datei in der gleichen Zeile,
+        dann gibt es keinen Abstand zwischen denen im Browser -->
+    <span>span</span>
+    <span>span</span>
+
+    <hr />
+
+    <pre>
+Will man einfach nur 4 Boxen haben, die wir oben sehen, nimmt man einfach nur 4 Divisions.
+
+</pre>
+    <div><p>Neuer Paragraph Anfang ... <span>besonderer Text</span>... Paragraph Ende</p></div>
+    <div><p>Neuer Paragraph Anfang ... <span>besonderer Text</span>... Paragraph Ende</p></div>
+    <div><p>Neuer Paragraph Anfang ... <span>besonderer Text</span>... Paragraph Ende</p></div>
+    <div><p>Neuer Paragraph Anfang ... <span>besonderer Text</span>... Paragraph Ende</p></div>
+</body>
+</html>

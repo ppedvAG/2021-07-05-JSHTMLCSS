@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Größeneinheiten</title>
+    <style>
+        div {
+            border: medium solid lightblue;
+        }
+        #pixel {
+            font-size: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #prozent {
+            /* 10% vom Wert der gleichen Eigenschaft beim Elternelement*/
+            font-size: 10%;
+            /* 10% von der Breite des Eltern-Elements */
+            padding: 10%;
+            /* 10% der Seitenlänge */
+            border-radius: 10%;
+        }
+        body {
+            font-size: 20px;
+        }
+        #em {
+            font-size: 1.5em;
+            padding: 1.5em;
+            border-radius: 1.5em;
+        }
+        html {
+            font-size: 30px;
+        }
+        #rem {
+            font-size: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+        #vw {
+            font-size: 1vw;
+            padding: 1vw;
+            border-radius: 1vw;
+        }
+        #vh {
+            font-size: 1vh;
+            padding: 1vh;
+            border-radius: 1vh;
+        }
+        #vmin {
+            font-size: 1vmin;
+            padding: 1vmin;
+            border-radius: 1vmin;
+        }
+        #vmax {
+            font-size: 1vmax;
+            padding: 1vmax;
+            border-radius: 1vmax;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Größeneinheiten</h1>
+
+    <!--((div[id=""]>h2+p>lorem10)+(hr))*8-->
+    <div id="pixel">
+        <h2>pixel</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="prozent">
+        <h2>prozent</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="em">
+        <h2>em</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="rem">
+        <h2>rem</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="vw">
+        <h2>vw</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="vh">
+        <h2>vh</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="vmin">
+        <h2>vmin</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+    <div id="vmax">
+        <h2>vmax</h2>
+        <p>Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+    </div>
+    <hr />
+
+</body>
+</html>
