@@ -17,7 +17,7 @@ ${4 + 5}
 r
 i
 ng`
-// innerText übernimmt die Formattierung vom Interpolationstring
+// innerText ï¿½bernimmt die Formattierung vom Interpolationstring
 let letX = 4;
 let letY = 5;
 p_string3.innerText =
@@ -41,9 +41,12 @@ var var1 = 3; // wird als Eigenschaft vom globalen Objekt eingetragen
 
 let let1 = 5; // hier ist es nicht der Fall
 
-// Kontrolle über Bezeichner
+// Kontrolle ï¿½ber Bezeichner
 var var1 = 5; // man darf var-Variablen unter gleichem Namen anlegen
 // let let1 = 3; // js-intro.html:65 Uncaught SyntaxError: Identifier 'let1' has already been declared
+
+// setzt ein Breakpoint direkt im Code festprogrammiert
+// debugger;
 
 // Scopes
 {
@@ -60,7 +63,7 @@ console.log(var1); // 7
 document.getElementById('p_id').innerHTML = 'Inhalt f&uuml;r p_id-Paragraph';
 
 // AUFRUF VON FUNKTIONEN GLEICH NACH DER DEFINITION
-// solche Ausdrücke am besten mit Semikolons abschließen
+// solche Ausdrï¿½cke am besten mit Semikolons abschlieï¿½en
 (function doSomething() {
     console.log('something');
 })();

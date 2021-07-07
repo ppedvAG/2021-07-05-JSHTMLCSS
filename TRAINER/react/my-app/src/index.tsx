@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+    <React.StrictMode>
+        {/*Aufruf einer Funktion, die eine React-Komponente ist: */}
     <App />
+    
+        {/* Kommentar in JSX / TSX Bereich */}
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
