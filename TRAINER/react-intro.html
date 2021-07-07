@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>    
+    <title>INTRO REACT</title>
+</head>
+<body>
+
+    
+    <h1>INTRO REACT</h1>
+    <p id="myParagraph"></p>
+    <div id="myDiv">platzhalter für P</div>
+    <App>inhalt von App</App>
+
+
+
+
+    <script>
+        console.log('myParagraph :>> ', myParagraph);      
+
+        // ein eigenes React Element erstellen:
+        const bemerkung = React.createElement('span', {class: 'underlined'}, 'Bemerkung zum heutigen Meeting');
+        console.log('bemerkung :>> ', bemerkung);
+        ReactDOM.render(bemerkung, myParagraph);
+
+        // ein eigenes HTML Element erstellen:
+        const pClassic = document.createElement('p', {class: 'underlined'});
+        const textFürP = document.createTextNode('inhalt von p');
+        pClassic.appendChild(textFürP);
+        myDiv.appendChild(pClassic);
+        console.log('myDiv :>> ', myDiv); 
+    </script>
+    
+</body>
+</html>
