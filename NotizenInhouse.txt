@@ -1,0 +1,8 @@
+Matthias hat empfohlen:
+https://www.udemy.com/course/complete-guide-to-building-an-app-with-net-core-and-react/
+
+Eine mit Blazor generierte App
+https://windy-ui.techgems.net/
+
+Ein Beispiel für die Electron-App
+https://www.diagrams.net/ (nachdem man das heruntergeladen hat)

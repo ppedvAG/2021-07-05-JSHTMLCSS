@@ -34,14 +34,50 @@ Password-Confirm:
 Wenn der Benutzer in zwei Input-Feldern den gleichen Text eingegeben hat, 
 wird eine Meldung für Erfolg gezeigt, sonst ein Fehlerhinweis.
 </pre>
-    <input id="input1" type="password" value="" placeholder="geben Sie Ihr PW ein"/>
-    <input id="input2" type="password" value="" placeholder="bestätigen Sie Ihr PW"/>
+    <input id="input1" type="password" placeholder="geben Sie Ihr PW ein" />
+    <input id="input2" type="password" placeholder="bestätigen Sie Ihr PW" />
     <p id="outp"></p>
-    <button id="submit" onclick="handleInput()">check</button>
+    <button onclick="handleInput()">confirm</button>
 
     <hr />
 
+    <h2>TS Primitiven Typen</h2>
+    <pre>siehe Konsole</pre>
+
+    <hr />
+
+
+
+
+    <h2>Union Types Übung</h2>
+    <pre>
+Fragen Sie vom Benutzer sein Geburtsdatum ab, zeigen Sie das Datum zum Nachprüfen in einer Meldung.
+</pre>
+    <label>Geben Sie Ihr Geburtsdatum ein: 
+    <input type="date" name="birthdayInput" onchange="saveBirthday()" />
+    </label>
+    <p id="datumHinweis"></p>
+    <hr />
+
+
+
+
+
+    <h2>TS Collections</h2>
+
+    <h3>Arrays</h3>
+    <pre>siehe ts-Datei</pre>
+    <hr>
+
+    <h3>Tupels</h3>
+    <svg id="mySVG" width="300" height="300" style="border: thin solid"></svg>
+
     <script src="ts-intro.js"></script>
     <script src="ts-intro-ue.js"></script>
+    <script src="ts-primitives.js"></script>
+    <script src="ts-unions-ue.js"></script>
+    <script src="ts-collections.js"></script>
+
+
 </body>
 </html>
