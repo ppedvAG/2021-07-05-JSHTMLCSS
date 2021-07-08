@@ -31,5 +31,5 @@ var coord5 = [56, 100];
 // auch mehr als 2 Einträge dürfen vorkommen
 var coord3D = [1, 2, 3];
 var mySVG = document.getElementById('mySVG');
-var stringForPolygon = "\n<polygon points=\"\n" + coord1 + "\n" + coord2 + "\n" + coord3 + "\n" + coord4 + "\n" + coord5 + "\n\" style=\"fill: lime; stroke: purple; stroke-width: 3; border: thin solid\" />";
+var stringForPolygon = "\n<polygon points=\"\n" + coord1 + "\n" + coord2 + "\n" + coord3 + "\n" + coord4 + "\n" + coord5 + "\n\" style=\"fill: lime; stroke: purple; stroke-width: 3\" />";
 mySVG.innerHTML = stringForPolygon;
