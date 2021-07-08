@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Anschluss</title>
+</head>
+<body>
+    <h1>TS Anschluss</h1>
+
+    <h2>TS Intro</h2>
+
+    <h3>TS Projekt einrichten</h3>
+    <pre>
+mit 'npm init -y' wurde package.json für das neue npm-Projekt angelegt
+mit 'npm install @types/node -save-dev' wurden package-lock.json und node-modules für TS-Datentypen angelegt
+mit 'tsc --watch' wurde TS-Compiler in Watch-Modus gestartet
+Entsprechende JS-Datei wurde erstellt
+</pre>
+    <hr />
+
+
+    <h3>Verbindung zu DOM</h3>
+    <p id="myP"></p>
+    <hr />
+
+
+    <h3>Übung</h3>
+    <pre>
+Password-Confirm:
+Wenn der Benutzer in zwei Input-Feldern den gleichen Text eingegeben hat, 
+wird eine Meldung für Erfolg gezeigt, sonst ein Fehlerhinweis.
+</pre>
+    <input id="input1" type="password" value="" placeholder="geben Sie Ihr PW ein"/>
+    <input id="input2" type="password" value="" placeholder="bestätigen Sie Ihr PW"/>
+    <p id="outp"></p>
+    <button id="submit" onclick="handleInput()">check</button>
+
+    <hr />
+
+    <script src="ts-intro.js"></script>
+    <script src="ts-intro-ue.js"></script>
+</body>
+</html>
