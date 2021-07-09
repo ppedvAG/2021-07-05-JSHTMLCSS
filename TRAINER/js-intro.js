@@ -49,6 +49,7 @@ var var1 = 5; // man darf var-Variablen unter gleichem Namen anlegen
 // debugger;
 
 // Scopes
+// let-Variablen akzeptieren Block-Scopes
 {
     let let1 = 3;
     console.log(let1); // 3
@@ -58,6 +59,20 @@ var var1 = 5; // man darf var-Variablen unter gleichem Namen anlegen
 console.log(let1); // 5
 console.log(var1); // 7
 // const-Variablen akzeptieren auch die Scopes
+// Hinweis, in ES3 und ES5 sind keine Funktionen in den Block-Scopes möglich
+
+
+
+// var-Variablen akzeptieren aber den Function-Scope
+var fctTest1 = 'wert vor der fct';
+function testeFctScope() {
+    var fctTest1 = 'wert in der fct';
+    console.log("ausgabe in fct: fctTest1: ", fctTest1)
+}
+console.log("ausgabe nach fct: fctTest1: ", fctTest1)
+testeFctScope();
+console.log("ausgabe nach Aufruf von fct: fctTest1: ", fctTest1)
+
 
 
 document.getElementById('p_id').innerHTML = 'Inhalt f&uuml;r p_id-Paragraph';

@@ -137,6 +137,28 @@ Stomp - STOMP is a frame based protocol, with frames modelled on HTTP. A frame c
 
 ## ASYNCHRONES JS
 
-- [ ] Promise
+- [x] Promise
 - [ ] service workers
 - [ ] fetch API
+
+## EMBEDED CONTENT / ADD-ONS
+
+- [ ] iFrames (inline Frames)
+- [ ] video
+- [ ] audio
+- [ ] canvas
+- [ ] object
+- [ ] embed
+
+## JQUERY (Optional)
+
+- [ ] Syntax und Grundprinzip
+
+## REACT: KOMPONENTEN ALS KLASSEN
+
+- [ ] Syntax
+- [ ] State
+
+## KOMMUNIKATION ZWISCHEN DEN KOMPONENTEN
+
+- [ ] Props State und Events Zusammenspiel
