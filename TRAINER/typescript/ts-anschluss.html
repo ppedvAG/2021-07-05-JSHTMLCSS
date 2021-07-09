@@ -86,13 +86,20 @@ Fragen Sie vom Benutzer sein Geburtsdatum ab, zeigen Sie das Datum zum Nachprüf
     <script src="ts-primitives.js"></script>
     <script src="ts-unions-ue.js"></script>
     <script src="ts-collections.js"></script>-->
-    <script src="js-promise.js"></script>
+    <!--<script src="js-promise.js"></script>
     <script src="js-callbacks.js"></script>
-
-
-
-
-
+    <script>-->
+        <!-- TEST: sind Funktionen aus einem Funktionenscope hier sichtbar?
+        Dadurch, dass learnJS im anonymen Funktion-Scope definiert ist, ist sie von hier nicht sichtbar
+         callbacksScope.learnJS((message) => {
+       console.log('\n CALLBACKS')
+        console.log('Erfolgreich: ' + message);
+    }, (fail) => {
+        console.log('\n CALLBACKS')
+        console.log(fail.name + ' ' + fail.message);
+          })-->
+    <!--</script>-->
+    <script src="js-service-worker-main.js"></script>
 
 </body>
 </html>

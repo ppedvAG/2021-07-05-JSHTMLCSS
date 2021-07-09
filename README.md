@@ -130,6 +130,7 @@ Stomp - STOMP is a frame based protocol, with frames modelled on HTTP. A frame c
 ## STORAGE APIs
 
 - [ ] cookies
+- [ ] cache
 - [ ] local storage
 - [ ] session storage
 - [ ] indexedDB
@@ -143,12 +144,12 @@ Stomp - STOMP is a frame based protocol, with frames modelled on HTTP. A frame c
 
 ## EMBEDED CONTENT / ADD-ONS
 
-- [ ] iFrames (inline Frames)
-- [ ] video
-- [ ] audio
-- [ ] canvas
-- [ ] object
-- [ ] embed
+- [x] iFrames (inline Frames)
+- [x] video
+- [x] audio
+- [x] canvas
+- [x] object
+- [x] embed
 
 ## JQUERY (Optional)
 

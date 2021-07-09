@@ -35,21 +35,28 @@ sdfg
 sn</pre>
 `;
 
+
+
+
 // VARIABLEN
 
 var var1 = 3; // wird als Eigenschaft vom globalen Objekt eingetragen
-
 let let1 = 5; // hier ist es nicht der Fall
-
 // Kontrolle �ber Bezeichner
 var var1 = 5; // man darf var-Variablen unter gleichem Namen anlegen
 // let let1 = 3; // js-intro.html:65 Uncaught SyntaxError: Identifier 'let1' has already been declared
 
+
+// DEBUGGER
+
 // setzt ein Breakpoint direkt im Code festprogrammiert
 // debugger;
 
-// Scopes
-// let-Variablen akzeptieren Block-Scopes
+
+
+
+// SCOPES
+// let- und const-Variablen akzeptieren Block-Scopes, var-Variablen nicht
 {
     let let1 = 3;
     console.log(let1); // 3
@@ -58,12 +65,11 @@ var var1 = 5; // man darf var-Variablen unter gleichem Namen anlegen
 }
 console.log(let1); // 5
 console.log(var1); // 7
-// const-Variablen akzeptieren auch die Scopes
 // Hinweis, in ES3 und ES5 sind keine Funktionen in den Block-Scopes möglich
 
 
 
-// var-Variablen akzeptieren aber den Function-Scope
+// var-, let- und const-Variablen akzeptieren Function-Scope
 var fctTest1 = 'wert vor der fct';
 function testeFctScope() {
     var fctTest1 = 'wert in der fct';
@@ -72,6 +78,11 @@ function testeFctScope() {
 console.log("ausgabe nach fct: fctTest1: ", fctTest1)
 testeFctScope();
 console.log("ausgabe nach Aufruf von fct: fctTest1: ", fctTest1)
+
+// Funktion-Scopes ist der Grund, warum man den Code manchmal in eine anonyme Funktion reinpackt und diese gleich aufruft.
+(function () {
+    // weiterer Js code im neuen FCT-Scope
+})()
 
 
 
