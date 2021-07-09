@@ -1,11 +1,10 @@
 "use strict";
-var cacheName = 'v1';
+var cacheName = 'v1'; // um Caches sp�ter auszutauschen
 var cacheAssets = [
-    'workers.html',
-    'about.html',
-    'main.js',
-    'workers.css'
+    'js-service-worker-main.js'
 ];
+//'../css-box.html', //Dateien au�erhalb vom SW-Scope k�nnen nicht gecachet werden!!!
+//'../css-selectors.html',
 // call Install Event
 self.addEventListener('install', function (e) {
     // todo #4

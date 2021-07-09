@@ -7,6 +7,7 @@ if ('serviceWorker' in navigator) {
                 console.log("key: " + key);
                 // console.log(`reg[key]: ${reg[key]}`)
             }
+            console.log("SW: ", navigator.serviceWorker);
         })
             .catch(function (err) { return console.log("Service Worker Fehler: " + err); });
     });

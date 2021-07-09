@@ -1,12 +1,12 @@
-const cacheName = 'v1';
+const cacheName = 'v1'; // um Caches später auszutauschen
 const cacheAssets = [
-    'workers.html',
-    'about.html',
-    'main.js',
-    'workers.css'
-]
+    'js-service-worker-main.js'
+];
+    //'../css-box.html', //Dateien außerhalb vom SW-Scope können nicht gecachet werden!!!
+    //'../css-selectors.html',
+
 // call Install Event
-self.addEventListener('install', (e) => { // Definition von dem EventObjekt muss für SW angepasst werden
+self.addEventListener('install', (e: any) => { // Definition von dem EventObjekt muss für SW angepasst werden
     // todo #4
     console.log('Service Worker: Installed');
     e.waitUntil(
@@ -21,7 +21,7 @@ self.addEventListener('install', (e) => { // Definition von dem EventObjekt muss
 })
 
 // call activate event
-self.addEventListener('activate', (e) => {
+self.addEventListener('activate', (e: any) => {
     console.log('Service Worker: Activated');
     // Remove unwanted caches
     e.waitUntil(
