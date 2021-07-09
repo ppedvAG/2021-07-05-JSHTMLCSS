@@ -88,3 +88,55 @@ Format: Vollzeit
 - [x] Übung [Todos.tsx](TRAINER/react/my-app/src/Todos.tsx)
 
 
+## VERBINDUNG ZUM SERVER
+
+- [ ] HTTP-Requests
+- [ ] Notifications
+  - [ ] Push & Notifications API
+- [ ] SignalR
+  - [ ] [home](https://dotnet.microsoft.com/apps/aspnet/signalr)
+  - [ ] [ms docs](https://docs.microsoft.com/de-de/aspnet/signalr/overview/getting-started/introduction-to-signalr)
+  - [ ] WebSockets
+  - [ ] Long Polling
+- [ ] Ajax
+  - [ ] REST-APIs (http get, post, update)
+- [ ] Inline Frame
+- [ ] load balancing & sticky sessions
+  - [ ] [erklärung vom Begriff](https://load-balancer.info/themen/sticky-session-load-balancing/)
+  - [ ] [NGINX docs](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
+
+
+### OPTIONAL
+
+- [ ] OData für eine Syntax bei HTTP-Anfrage
+  - [ ] [docs auf ms docs](https://docs.microsoft.com/en-us/odata/)
+- [ ] GraphQL von FB (äquivalent zu OData von MS)
+  - [ ] [tutorial](https://www.tutorialspoint.com/graphql/graphql_jquery_integration.htm)
+- [ ] Stomp
+
+Stomp - STOMP is a frame based protocol, with frames modelled on HTTP. A frame consists of a command, a set of optional headers and an optional body. STOMP is text based but also allows for the transmission of binary messages. The default encoding for STOMP is UTF-8, but it supports the specification of alternative encodings for message bodies.
+
+
+## GEO APIs
+
+- [ ] Geolocation API (im Sinne von Funktionalität)
+  - [ ] [docs auf mdn](https://developer.mozilla.org/de/docs/Web/API/Geolocation_API)
+- [ ] Google Maps APIs (im Sinne von Web Services)
+  - [ ] Distance API
+  - [ ] Direction API ...
+  - [ ] [Homepage von maps apis](https://cloud.google.com/maps-platform/products)
+
+
+## STORAGE APIs
+
+- [ ] cookies
+- [ ] local storage
+- [ ] session storage
+- [ ] indexedDB
+ 
+
+## ASYNCHRONES JS
+
+- [ ] Promise
+- [ ] service workers
+- [ ] fetch API
