@@ -10,13 +10,20 @@ Format: Vollzeit
 
 ## WARMING UP
 
-- [x] Folien: Greeter.pdf
-- [x] Demo:
-- [x] Lab:
+- [x] Folien Greeter.pdf
 - [x] Commit [ordner angelegt](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/2c4f2b7f45af9b448a1d3077f842cf10dd066c63)
 
 ## INTRO
 
+- [x] Folien
+  - [ ] HTML.pdf > Getting Started
+  - [ ] HTML.pdf > Syntax
+  - [ ] HTML.pdf > Emmet / Zen Coding
+  - [ ] JAVASCRIPT.pdf > Getting Started
+  - [ ] JAVASCRIPT.pdf > Ecosystem
+  - [ ] JAVASCRIPT.pdf > Essentials
+  - [ ] CSS.pdf > Getting Started
+  - [ ] CSS.pdf > Syntax & Injection
 - [x] Commit [intro done](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/0bbe8a403b1e72a7cd8f8b6767297511fea2500c)
 - [x] Demos
   - [x] [js-intro.html](TRAINER/js-intro.html)
@@ -25,6 +32,10 @@ Format: Vollzeit
 
 ## ARRAYS, FUNCTIONS
 
+- [x] Folien
+  - [ ] JAVASCRIPT.pdf > Functions
+  - [ ] JAVASCRIPT.pdf > Collections > Arrays
+  - [ ] JAVASCRIPT.pdf > Handling Date & Time
 - [x] Commit [arrays, zoom, setInterval done](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/b547daf16a8700bf2e4930f2ba57ab52002f33a4)
 - [x] Übungen
   - [x] [ue-arrays.html](TRAINER/ue-arrays.html)
@@ -33,22 +44,35 @@ Format: Vollzeit
 
 ## SECTIONING, TABLE
 
+- [x] Folien
+  - [ ] HTML.pdf > Sectioning Content
+  - [ ] HTML.pdf > Lists & Tables
 - [x] Commit [sectioning, table](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/7549602be90ea32b7fb06136ae933aafb011f61e)
 - [x] Demo [html-sectioning.html](TRAINER/html-sectioning.html)
 - [x] Übung [ue-table.html](TRAINER/ue-table.html)
 
 ## OBJECTS
 
+- [x] Folien
+  - [ ] JAVASCRIPT.pdf > Objects
+  - [ ] JAVASCRIPT.pdf > Window API
+  - [ ] HTML.pdf > DOM Node, Element, HTMLElement
+  - [ ] HTML.pdf > HTML Document & JS Object 'document'
 - [x] Commit [ue objects](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/156f67edbc5339dc24e3a048a2cbd378a4333499)
 - [x] Übung [ue-objects.html](TRAINER/ue-objects.html)
 
 ## SELECTORS
 
+- [x] Folien
+  - [ ] CSS.pdf > Selectors & Specificity
+  - [ ] CSS.pdf > Properties
 - [x] Commit [css selektors](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/a9e4ba013d19f79a32fc3170e78b9404e3954c54)
 - [x] Demo [css-selectors.html](TRAINER/css-selectors.html)
 
 ## FORMS, CASTING
 
+- [x] Folien
+  - [ ] HTML.pdf > Input Content (Forms)
 - [x] Commit [forms, casting](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/2947cff0f2d0bc94758a91dfad82616c2abdac71)
 - [x] Demos
   - [x] [html-forms.html](TRAINER/html-forms.html)
@@ -57,6 +81,9 @@ Format: Vollzeit
 
 ## CSS BOX, CSS UNITS
 
+- [x] Folien
+  - [ ] CSS.pdf > Box Model
+  - [ ] CSS.pdf > Units
 - [x] Commit [css box, css units](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/f6d05ff0396eee9639f8cee07c9b1722a2e36bcb)
 - [x] Demos
   - [x] [css-box.html](TRAINER/css-box.html)
@@ -64,6 +91,10 @@ Format: Vollzeit
 
 ## REACT
 
+- [x] Folien
+  - [ ] REACT.pdf > Intro
+  - [ ] REACT.pdf > create-react-app & React Project
+  - [ ] REACT.pdf > Debugging
 - [x] Commits
   - [x] [react default cra ts template installiert](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/309b65f14c67cc12f2c2415fb63235924cb6f49f)
   - [x] [greeter component](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/9344d813c76ebfcba631e8f5f71c95859acacff4)
@@ -75,6 +106,12 @@ Format: Vollzeit
 
 ## BOOTSTRAP
 
+- [x] Folien
+  - [ ] BOOTSTRAP.pdf > Getting Started
+  - [ ] BOOTSTRAP.pdf > Ecosystem
+  - [ ] BOOTSTRAP.pdf > Classes
+  - [ ] BOOTSTRAP.pdf > Grid
+  - [ ] BOOTSTRAP.pdf > Components
 - [x] Commits
   - [x] [bootstrap](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/1e9694b8c4cb25a6c922658d7a9d11c6c2cf6ae8)
   - [x] [bs table ue](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/da674486f945527948bc1ce4d674883bea0d7e1d)
@@ -83,10 +120,12 @@ Format: Vollzeit
 
 ## JSX / TSX
 
+- [x] Folien
+  - [ ] REACT.pdf > JSX / TSX
+  - [ ] REACT.pdf > Elements
 - [x] Commit [todos table](https://github.com/ppedvAG/2021-07-05-JSHTMLCSS/commit/45072023f80439bddff62ad063dc07524a51ed34)
 - [x] Demo [react-intro.html](TRAINER/react-intro.html)
 - [x] Übung [Todos.tsx](TRAINER/react/my-app/src/Todos.tsx)
-
 
 ## VERBINDUNG ZUM SERVER
 
@@ -105,7 +144,6 @@ Format: Vollzeit
   - [ ] [erklärung vom Begriff](https://load-balancer.info/themen/sticky-session-load-balancing/)
   - [ ] [NGINX docs](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
 
-
 ### OPTIONAL
 
 - [ ] OData für eine Syntax bei HTTP-Anfrage
@@ -116,50 +154,43 @@ Format: Vollzeit
 
 Stomp - STOMP is a frame based protocol, with frames modelled on HTTP. A frame consists of a command, a set of optional headers and an optional body. STOMP is text based but also allows for the transmission of binary messages. The default encoding for STOMP is UTF-8, but it supports the specification of alternative encodings for message bodies.
 
-
 ## GEO APIs
 
-- [ ] Geolocation API (im Sinne von Funktionalität)
+- [ ] Folien
+  - [ ] JAVASCRIPT.pdf > Navigator & Geolocation
+- [ ] Geolocation API (im Sinne von JS-Funktionalität)
   - [ ] [docs auf mdn](https://developer.mozilla.org/de/docs/Web/API/Geolocation_API)
 - [ ] Google Maps APIs (im Sinne von Web Services)
   - [ ] Distance API
   - [ ] Direction API ...
   - [ ] [Homepage von maps apis](https://cloud.google.com/maps-platform/products)
 
-
 ## STORAGE APIs
 
-- [ ] cookies
+- [x] Folien
+  - [ ] PWA.pdf > Browser Storage
+- [x] cookies
 - [x] cache
 - [ ] local storage
 - [ ] session storage
 - [ ] indexedDB
  
-
 ## ASYNCHRONES JS
 
+- [x] Folien
+  - [ ] PWA.pdf > Service Workers
+  - [ ] PWA.pdf > Fetch API
 - [x] Promise
 - [x] service workers
-- [ ] fetch API
+- [x] fetch API
 
-## EMBEDED CONTENT / ADD-ONS
+## EMBEDDED CONTENT / ADD-ONS
 
+- [x] Folien
+  - [ ] HTML.pdf > Embedded Content
 - [x] iFrames (inline Frames)
 - [x] video
 - [x] audio
 - [x] canvas
 - [x] object
 - [x] embed
-
-## JQUERY (Optional)
-
-- [ ] Syntax und Grundprinzip
-
-## REACT: KOMPONENTEN ALS KLASSEN
-
-- [ ] Syntax
-- [ ] State
-
-## KOMMUNIKATION ZWISCHEN DEN KOMPONENTEN
-
-- [ ] Props State und Events Zusammenspiel
